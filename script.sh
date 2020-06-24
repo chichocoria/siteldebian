@@ -100,7 +100,7 @@ do
 	echo "2-Registrar Licencia"
 	echo "3-Crear tarea en Crontab de TXFinfer y Plugin"
 	echo "4-Realizar prueba de funcionamiento con SVL"
-	echo "5-Salir del Programa de utilidades"
+	echo "5-Salir del Programa de utilidades Sitel Pi Activia"
 
 	read -n1 -p "Ingrese una Opcion [1-3]: " opcion
 
