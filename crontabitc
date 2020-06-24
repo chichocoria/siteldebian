@@ -1,0 +1,6 @@
+@reboot /home/itc/txfinder /home/share/data /home/itc/sitel -X10 -d -l /var/log/txfinder.log -a -t -a tcp -a -l -a /var/log/txfinder.log -a -x -a 10
+
+@reboot /home/itc/regsitel -r 200.47.62.201 -p 8315 -l CPKCP8K0 -n 'PRUEBA' -t /home/share/data/ -s /home/itc/sitel -a -ttcp -a -x10 -a -l/var/log/regsitel.log
+
+@reboot cd /home/itc/jactivia/setup/ ; ./jactivia.sh
+
