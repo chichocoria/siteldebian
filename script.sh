@@ -82,6 +82,12 @@ echo "305467412536105316067195620220301AA  000000MN00000000000000            000
 echo "V1071101" > /home/itc/_svl.0
 sudo cp /home/itc/_svl.* /home/share/data/term00/upload/ ; touch /home/share/data/tx/term00 ; timeout 15 tail -f /var/log/txfinder.log
 }
+
+salir () {
+echo "Saliendo del Programa"
+sleep 2
+exit 0
+}
 while :
 do
 	clear
@@ -94,6 +100,7 @@ do
 	echo "2-Registrar Licencia"
 	echo "3-Crear tarea en Crontab de TXFinfer y Plugin"
 	echo "4-Realizar prueba de funcionamiento con SVL"
+	echo "5-Salir del Programa"
 
 	read -n1 -p "Ingrese una Opcion [1-3]: " opcion
 
@@ -109,6 +116,9 @@ do
 		;;
 		4) prueba_svl
 		   sleep 3
+		;;
+		5) salir
+
 	esac
 
 done
